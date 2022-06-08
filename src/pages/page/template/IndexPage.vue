@@ -4,6 +4,6 @@
 
 <template>
   <q-page class="row items-center justify-evenly">
-    Admin index
+    Admin page template index
   </q-page>
 </template>

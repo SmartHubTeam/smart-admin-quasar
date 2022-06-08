@@ -2,6 +2,8 @@
 
 A SmartHub template with Vue3, Quasar and Vite
 
+Inspirado em [https://material-kit-pro-react.devias.io/dashboard]
+
 ## Install the dependencies
 ```bash
 # verificar se o comando abaixo é necessário

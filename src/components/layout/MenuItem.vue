@@ -45,12 +45,13 @@ const active = computed(() =>
     :label="props.label"
     :default-opened="active"
     :header-class="active ? 'text-secondary' : ''"
+    class="app-menu-item"
   >
     <MenuItem
       v-for="item in props.items"
       :key="item.label"
       v-bind="item"
-      :inset-level="1"
+      :inset-level="0.6"
     />
   </q-expansion-item>
 
@@ -61,6 +62,7 @@ const active = computed(() =>
     :active="active"
     :inset-level="insetLevel"
     active-class="text-secondary"
+    class="app-menu-item"
   >
     <q-item-section
       v-if="props.icon"
@@ -70,7 +72,9 @@ const active = computed(() =>
     </q-item-section>
 
     <q-item-section>
-      <q-item-label>{{ props.label }}</q-item-label>
+      <q-item-label>
+        {{ props.label }}
+      </q-item-label>
     </q-item-section>
   </q-item>
 </template>
